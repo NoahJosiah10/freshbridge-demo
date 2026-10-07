@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FreshBridge Imports | Demo Website</title>
+<meta name="description" content="Demo website for a fictional food import company. Portfolio sample by Noah Josiah.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#10263a;--sea:#1d5d78;--mist:#eef4f6;--sun:#f0a81c;--leaf:#2f7d52;--white:#fff;--line:#d5e1e6}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:"Source Sans 3",system-ui,sans-serif;color:var(--ink);background:var(--white);line-height:1.6;font-size:18px}
+h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,sans-serif;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header{background:var(--ink);color:var(--white);position:sticky;top:0;z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-top:14px;padding-bottom:14px;flex-wrap:wrap}
+.logo{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.3rem;text-decoration:none}
+.logo span{color:var(--sun)}
+nav a{margin-left:20px;text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--sun)}
+.hero{background:var(--ink);color:var(--white);padding:72px 0 0}
+.hero h1{font-size:clamp(2.2rem,6vw,4rem);font-weight:800;max-width:15ch}
+.hero p{max-width:52ch;margin:20px 0 28px;color:#c9d9e0;font-size:1.15rem}
+.btn{display:inline-block;background:var(--sun);color:var(--ink);font-weight:600;padding:13px 24px;border-radius:6px;text-decoration:none}
+.btn:hover{background:#ffc04a}
+.route{list-style:none;padding:0;margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #2f4a60}
+.route li{padding:22px 18px 28px 0;position:relative}
+.route li::before{content:"";position:absolute;top:-6px;left:0;width:11px;height:11px;border-radius:50%;background:var(--sun)}
+.route b{display:block;font-family:"Bricolage Grotesque",sans-serif;font-size:1.05rem;margin-top:8px}
+.route span{color:#9fb6c2;font-size:.95rem}
+section{padding:72px 0}
+section h2{font-size:clamp(1.8rem,4vw,2.5rem);margin-bottom:18px}
+.lead{max-width:62ch}
+.alt{background:var(--mist)}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:32px}
+.product{border:1px solid var(--line);background:var(--white);border-radius:10px;overflow:hidden}
+.product i{display:block;height:92px}
+.product div{padding:16px 18px 20px}
+.product h3{font-size:1.2rem;margin-bottom:6px}
+.product p{font-size:.95rem;color:#3e5568}
+.check{margin-top:28px;display:grid;gap:0;max-width:760px}
+.check div{display:grid;grid-template-columns:34px 1fr;gap:14px;padding:18px 0;border-top:1px solid var(--line)}
+.check div:last-child{border-bottom:1px solid var(--line)}
+.check svg{width:26px;height:26px;stroke:var(--leaf);fill:none;stroke-width:2.5;margin-top:3px}
+.check h3{font-size:1.15rem;margin-bottom:4px}
+.check p{color:#3e5568}
+.contact{background:var(--ink);color:var(--white)}
+.contact p{color:#c9d9e0;max-width:56ch;margin-bottom:22px}
+footer{background:#0a1a29;color:#9fb6c2;font-size:.9rem;padding:22px 0}
+footer strong{color:var(--sun)}
+@media(max-width:720px){.route{grid-template-columns:1fr 1fr}nav a{margin:0 14px 0 0}section{padding:52px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="#top">Fresh<span>Bridge</span></a>
+    <nav aria-label="Main">
+      <a href="#about">About</a><a href="#products">Products</a><a href="#compliance">Compliance</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>Good food, documented from farm to dock.</h1>
+      <p>FreshBridge Imports brings Mediterranean and West African ingredients to U.S. retailers and restaurants, with every supplier checked and every shipment on record.</p>
+      <a class="btn" href="#contact">Request a price list</a>
+      <ol class="route" aria-label="How a shipment moves">
+        <li><b>Supplier check</b><span>Audit and records before we ship</span></li>
+        <li><b>Origin inspection</b><span>Quality and labeling review</span></li>
+        <li><b>Port entry</b><span>Paperwork filed ahead of arrival</span></li>
+        <li><b>Your shelf</b><span>Delivered with full traceability</span></li>
+      </ol>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>A small importer that keeps its paperwork straight</h2>
+      <p class="lead">We started FreshBridge because buyers kept asking the same question: can you show me where this came from? We work with a short list of family-run producers, visit them, and keep a file on each one. When you order from us, you get the answer in writing.</p>
+    </div>
+  </section>
+
+  <section id="products" class="alt">
+    <div class="wrap">
+      <h2>What we import</h2>
+      <p class="lead">Shelf-stable staples, sold in case quantities for retail and food service.</p>
+      <div class="products">
+        <article class="product"><i style="background:#e0a62b"></i><div><h3>Olive oil</h3><p>Cold-pressed extra virgin oil from small groves, in tins and bottles.</p></div></article>
+        <article class="product"><i style="background:#b5532f"></i><div><h3>Palm and shea oils</h3><p>Unrefined cooking oils from cooperatives, packed for export.</p></div></article>
+        <article class="product"><i style="background:#6d8f3c"></i><div><h3>Dried herbs and spices</h3><p>Oregano, thyme, and pepper blends, cleaned and sealed at origin.</p></div></article>
+        <article class="product"><i style="background:#7a4e8f"></i><div><h3>Dried fruit and nuts</h3><p>Figs, dates, and cashews sorted by grade and lot.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="compliance">
+    <div class="wrap">
+      <h2>Compliance and quality</h2>
+      <p class="lead">Importing food into the U.S. comes with rules. Here is how we handle the main ones, so buyers do not have to chase us for answers.</p>
+      <div class="check">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg><span><h3>FDA facility registration</h3><p>Food facilities that make, process, pack, or hold food for U.S. consumption must be registered with the FDA. We confirm this for each supplier we work with.</p></span></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg><span><h3>Foreign supplier verification</h3><p>As an importer, we keep a written plan to verify that our suppliers meet U.S. food safety expectations, with records of each review.</p></span></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg><span><h3>Prior notice of shipments</h3><p>We submit advance notice to the FDA before food arrives, so shipments are not held at the port for missing paperwork.</p></span></div>
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l5 5L20 6"/></svg><span><h3>Lot tracking and labeling</h3><p>Every case carries a lot code that links back to the supplier file, so a problem can be traced and fixed fast.</p></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Talk to us about your next order</h2>
+      <p>Tell us what you stock and how much you need. We reply within two working days with availability and pricing.</p>
+      <a class="btn" href="mailto:hello@freshbridge.example">hello@freshbridge.example</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap"><strong>Demo site.</strong> FreshBridge Imports is a fictional company created as a design sample. No real business, products, or client data. Designed by Noah Josiah.</div>
+</footer>
+</body>
+</html>
